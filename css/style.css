@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration:none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+.navbar{
+    position: fixed;
+    background-color: #000,#fff;
+    
+    width: 100%;
+    padding: 30px 0;
+    top: 0;
+    z-index: 999;
+    transition: .3s linear;
+}
+.navbar-inner{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 40px;
+}
+.navbar .navbar-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+   font-size: large;
+   font-weight: 600;
+   color: white;
+
+}
+.menu-togg{
+    background:none;
+    width: 30px;
+    border: none;
+    cursor:pointer;
+    position: relative;
+    outline: none;
+    z-index: 999;
+    display: none;
+}
+.menu-togg span{
+  display: block;
+  height: 3px;
+  background-color: #fff;
+  margin: 6px 0;
+  position: relative;
+  transition: .3s linear;
+}
+.navbar-menu a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .2s linear;
+  }
+  .navbar-menu a:hover{
+    color: #48dbfb !important;
+  }
+
+#main{
+    height: 100vh;
+    min-height: 500px;
+    background: url(../images/bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed
+  }
+#main .inner-width{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+#main .content{
+    width: 100%;
+    color: #fff;
+}
+#home .content h1{
+    font-size: 60px;
+    margin-bottom: 60px;
+  }
+  
+  #main .content h1::after{
+    content: " Ahmetcan";
+    animation: textanim 10s linear infinite;
+  }
+  .sosyal-m a{
+    color: #fff;
+    font-size: 22px;
+    margin: 0 10px;
+    margin-top: 30px;
+    transition: .2s linear;
+  }
+  
+  .sosyal-m a:hover{
+    color: #48dbfb;
+  }
+  
+  #main .buttons{
+    margin-top: 60px;
+  }
+  
+  #main .buttons a{
+    display: inline-block;
+    margin: 15px 30px;
+    color: #48dbfb;
+    font-size: 15px;
+    font-weight: 500;
+    width: 180px;
+    border: 1px solid #48dbfb;
+    padding: 14px 0;
+    border-radius: 6px;
+    transition: .2s linear;
+  }
+  #main .buttons a:hover,
+#main .buttons a:nth-child(2)
+{
+    background-color: #48dbfb;
+    color: rgb(2, 2, 2);
+  }
+  
+
+  @media screen and (max-width: 980px){
+    .navbar{
+        position: fixed;
+        background-color: rgb(253, 253, 253);
+        width: 100%;
+        padding: 30px 0;
+        top: 0;
+        z-index: 999;
+        transition: .3s linear;
+    }
+    .navbar-menu a{
+        color: #000;
+        font-size: 15px;
+        font-weight: 500;
+        margin-left: 30px;
+        transition: .2s linear;
+      }
+      .logo{
+        font-size: large;
+        font-weight: 600;
+        color:black
+     
+     }
+  }
